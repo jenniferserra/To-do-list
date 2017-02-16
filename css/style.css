@@ -1,0 +1,249 @@
+/* ************ GENERELL STYLE FÖR SITEN ************* */
+
+body {
+	background: #ffe6e6; /* rosa */
+	margin: 0px;
+}
+
+a{
+	color: #ff6666; /* rosa */
+}
+
+
+/* ************ HÄR ÄR ALLA TEXTER OCH RUBRIKER ************* */
+
+
+h1, h2, h3{
+	font-family: "avant garde", "century gothic", "arial narrow";
+	font-size: 2em;
+	color: black;
+}
+
+h2{
+	font-size: 1.2em;
+}
+
+h3{
+	font-size: 1em;
+}
+
+p{
+	padding-top: 10px;
+}
+
+
+
+/* ************ LOGIN / REGISTRERINGSSIDAN ************* */
+
+/* detta är bakgrunden för login/registreringssidan */
+body.loginbackground{
+	background-image: url("../images/bg4.jpg");
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/* rutan framför bakgrunden men bakom inlogg/registreringsformulär */
+.loginpage, .registerpage{
+	background-color: #ffffff; /* vit */
+	border: 1px solid #ffffff; /* vit */
+	border-radius: 20px;
+	max-width: 600px;
+	margin: 90px auto;
+	max-height: 400px;
+	padding: 30px;
+}
+
+
+/* kontrollerar själva innehållet i forumäläret, alltså boxarna och knappen */
+.login-box, .register-box {
+	text-align: center;
+}
+
+/* formulärets rutor */
+input{
+    width: 50%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ff9999; /* ljusrosa */
+    border-radius: 4px;
+}
+
+/*När man markerar ett inputfält för att fylla i info */
+input:focus {
+    border: 3px solid #ff6666; /* rosa */
+}
+
+/*inlogg/registrerings-knappen */
+.button {
+	background-color: #ff9999; /* rosa */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/*När man håller musen över knappen */
+.button:hover {
+    background-color: #ff6666; /*  mörkrosa */
+    color: white;
+}
+
+/* detta är för länken och texten under knapparna ("har du inget konto, registrera dig") */
+span.loginlinks{
+	font-family: garamond, times, verdana;
+	font-size: 1.2em;
+	 /* här ändrar man färg på har du inget konto, registrera dig länken */
+}
+
+/* alla systemmeddelanden */
+.message{
+	text-align: center;
+	font-family: garamond, times, verdana;
+	font-size: 1.2em;
+}
+
+/* *********************** HEADER *************************** */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+li {
+    float: right; 
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: "avant garde", "century gothic", "arial narrow";
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    text-decoration: underline;
+}
+
+.active {
+    background-color: #660000; /* mörk röd */
+}
+
+
+/* *************''''''*** STYLE FÖR VÄLKOMSTSIDAN, index.php  ***********''''''''**/
+
+/* Välkomsttexten */
+.welcome{
+	font-size: 2.5em;
+	text-align: center;
+	font-family: "avant garde", "century gothic", "arial narrow";
+	margin-top: 30vh;
+}
+
+/* knappen som går till användarens lista */
+.go-to-list-button{
+	background-color: #ff9999; /* mörkrosa */
+    color: #ffffff; /* vit */
+    padding: 15px 10px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 200px;
+    display: block;
+    margin:10vh auto;
+}
+
+
+/* ******************HÄR ÄR KODEN FÖR PRIOLISTAN ********************** */
+
+/* detta är designen som omsluter varje uppgift */
+.task{
+	background-color: #ffcccc; /* mellanrosa */
+	padding: 15px 15px;
+	max-width: 600px;
+	margin: 10px auto;
+	border: 1px solid #cccccc; /* grå */
+	border-radius: 20px;
+	text-align: center;
+
+}
+
+/* detta är design för där man lägger till nya uppgifter */
+.addtasks{
+	margin: 30px 0px;
+	text-align: center;
+}
+
+/*detta är design för lägga till ny uppgift-knappen */
+.add-task-button{
+	background-color: #ff9999; /* mörkrosa */
+	font-size: 1em;
+	font-family: "avant garde", "century gothic", "arial narrow";
+}
+
+.title{
+	font-size: 1.5em;
+	color: #ff6666;
+
+}
+
+.description{
+	font-style: italic;
+}
+
+
+.priority{
+	font-weight: bold;
+}
+
+/* Bilden som kan laddas upp till uppgifterna */
+
+.taskimage{
+	max-width: 500px;
+	margin: 5px auto;
+}
+
+/* Radera/klar-knapparna till varje uppgift */
+
+.delete-done-link {
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+/* Om man markerat en uppgift som klar */
+
+.done {
+	color: #006622; /* grön */
+}
+
+/* Soriteringslistan */
+.sortList{
+	text-align: center;
+}
+
+
+/* Dessa är färgkodningen beroende på vilken prio uppgifterna har */
+
+.prio1 {
+	color: #009933; /* grön */
+}
+
+.prio2 {
+	color: #ff751a; /* orange */
+}
+
+.prio3 {
+	color: #e62e00; /* röd */
+}
+
